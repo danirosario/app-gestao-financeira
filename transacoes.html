@@ -70,7 +70,8 @@
         </div>
     </nav>
     <main class="container">
-        <h1>Gastos Mensais</h1>
+        <br><br><br>
+        <h2>Gastos Mensais</h2>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -113,12 +114,19 @@
                         </form>
 
                     </div>
+
                 </div>
             </div>
         </div>
         <div class="background">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Cadastrar transação</button>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Cadastrar transação
+                </button>
+
+                <input type="month" id="month-filter" class="form-control w-auto">
+            </div>
+
             <table class="expenses">
                 <thead>
                     <tr>

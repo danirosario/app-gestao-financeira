@@ -34,11 +34,17 @@ p {
     padding: 32px;
     background-color: #E9E9E7;
     border-radius: 8px;
-    margin-top: 70px;
+    margin-top: 10px;
     height: 65vh;
     border-radius: 20px 20px 20px 20px;
 }
 
 main {
     padding: 20px;
+}
+
+#month-filter {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid;
 }
