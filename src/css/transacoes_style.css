@@ -1,0 +1,43 @@
+.expenses {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.expenses th,
+.expenses td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.expenses th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+
+}
+
+.expenses tr {
+    background-color: #f8f8f8;
+}
+
+.expenses tr:hover {
+    background-color: #ddd;
+}
+
+p {
+    font-weight: bold;
+}
+
+.background {
+    padding: 32px;
+    background-color: #E9E9E7;
+    border-radius: 8px;
+    margin-top: 70px;
+    height: 65vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+main {
+    padding: 20px;
+}

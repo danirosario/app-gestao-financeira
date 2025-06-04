@@ -67,7 +67,7 @@ body {
     font-weight: 600;
 }
 
-.formLogin a {
+.formLogin .link {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 13px;
@@ -75,7 +75,7 @@ body {
     transition: all linear 160ms;
 }
 
-.formLogin a:hover {
+.formLogin .link:hover {
     color: #023047;
 }
 
@@ -85,10 +85,14 @@ body {
     font-size: 14px;
     font-weight: 600;
     border: none !important;
+    border-radius: 4px;
     transition: all linear 160ms;
     cursor: pointer;
     margin: 0 !important;
-
+    display: block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .btn:hover {
