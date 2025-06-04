@@ -1,0 +1,121 @@
+.expenses {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.expenses th,
+.expenses td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.expenses th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+
+}
+
+.expenses tr {
+    background-color: #f8f8f8;
+}
+
+.expenses tr:hover {
+    background-color: #ddd;
+}
+
+p {
+    font-weight: bold;
+}
+
+.background {
+    padding: 32px;
+    background-color: #E9E9E7;
+    border-radius: 8px;
+    margin-top: 70px;
+    height: 65vh;
+    border-radius: 20px 20px 20px 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#modal {
+    width: 500px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ddd;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#modal label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#modal input[type="text"],
+#modal input[type="date"],
+#modal input[type="number"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#modal select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#modal .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.confirm-modal {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #1E5F74;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-modal:hover {
+    background-color: #164a5a;
+}
+
+.close-modal {
+    background-color: #ccc;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+    background-color: #999;
+}
