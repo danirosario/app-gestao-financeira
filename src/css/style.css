@@ -82,6 +82,11 @@ main {
 #open_btn:hover {
     background-color: #297D98;
 }
+#logout_btn,
+#logout_btn {
+    color: #fff;
+    text-decoration: underline;
+}
 
 .side_item a {
     text-decoration: none;
