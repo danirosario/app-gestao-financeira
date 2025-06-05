@@ -85,7 +85,7 @@
                         <form>
                             <div class="mb-3">
                                 <label for="amount" class="form-label">Valor</label>
-                                <input placeholder="00,00" type="number" class="form-control" id="amount">
+                                <input placeholder="00,00" type="number" class="form-control" id="amount" step="0.01">
                             </div>
                             <div class="mb-3">
                                 <label for="description" class="form-label">Descrição</label>
@@ -142,12 +142,70 @@
                         <td>Alimentação</td>
                         <td>Alimentação</td>
                         <td>R$ 100,00</td>
-                    </tr>
-                    <tr>
-                        <td>02/06/2025</td>
-                        <td>Transporte</td>
-                        <td>Transporte</td>
-                        <td>R$ 50,00</td>
+
+                        <td>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                <i class="fa-solid fa-pen-to-square"> </i>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Atualizar uma
+                                                transação</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="amount" class="form-label">Valor</label>
+                                                    <input placeholder="00,00" type="number" class="form-control"
+                                                        id="amount" step="0.01">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="description" class="form-label">Descrição</label>
+                                                    <input placeholder="Descrição da sua despesa" type="text"
+                                                        class="form-control" id="description">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="category" class="form-label">Categoria</label>
+                                                    <input placeholder="Categoria da sua despesa" type="text"
+                                                        class="form-control" id="category">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="type" class="form-label">Tipo</label>
+                                                    <select class="form-select" id="type">
+                                                        <option value="" selected disabled>Selecione o tipo da despesa
+                                                        </option>
+                                                        <option value="1">Receita</option>
+                                                        <option value="2">Despesa</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="date" class="form-label">Data</label>
+                                                    <input placeholder="Adicione uma data" type="date"
+                                                        class="form-control" id="date">
+                                                </div>
+
+                                                <button type="submit" class="btn btn-primary">Atualizar</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td> <!--adicionar botão editar e excluir-->
+
+                        <td>
+                            <i class="fa-solid fa-trash"></i>
+                        </td>
                     </tr>
                     <!-- Mais linhas de gastos aqui -->
                 </tbody>
